@@ -8,160 +8,160 @@ import java.time.LocalDate;
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Clients {
-    private long cusinfo_cusnum;            // Ид клиента
-    private String cusinfo_lastname;        // Фамилия
-    private String cusinfo_firstName;       // Имя
-    private String cusinfo_middleName;      // Отчество
-    private LocalDate cusinfo_birthday;     // Дата рождения
-    private String cusinfo_resident;        // Резидент или нет
-    private String cusinfo_doc_inn;         // ИНН
-    private String cusinfo_citizenship;     // Гражданство
-    private String cusinfo_magicWord;       // Кодовое слово
-    private String cusinfo_filial;          // Филиал
-    private String cusinfo_dopen;           // Дата заведения клиента
-    private String cusinfo_doc_type;        // Тип документа
-    private String cusinfo_doc_ser;         // Серия документа
-    private String cusinfo_doc_num;         // Номер документа
-    private LocalDate cusinfo_doc_date;     // Дата выдачи документа
-    private String cusinfo_doc_agency;      // Кем выдан
-    private String cusinfo_doc_subdiv;      // Код подразделения
+    private long cusInfo_cusnum;            // Ид клиента
+    private String cusInfo_lastname;        // Фамилия
+    private String cusInfo_firstName;       // Имя
+    private String cusInfo_middleName;      // Отчество
+    private LocalDate cusInfo_birthday;     // Дата рождения
+    private String cusInfo_resident;        // Резидент или нет
+    private String cusInfo_doc_inn;         // ИНН
+    private String cusInfo_citizenship;     // Гражданство
+    private String cusInfo_magicWord;       // Кодовое слово
+    private String cusInfo_filial;          // Филиал
+    private String cusInfo_dopen;           // Дата заведения клиента
+    private String cusInfo_doc_type;        // Тип документа
+    private String cusInfo_doc_ser;         // Серия документа
+    private String cusInfo_doc_num;         // Номер документа
+    private LocalDate cusInfo_doc_date;     // Дата выдачи документа
+    private String cusInfo_doc_agency;      // Кем выдан
+    private String cusInfo_doc_subdiv;      // Код подразделения
 
     public Clients() {
     }
 
-    public long getCusinfo_cusnum() {
-        return cusinfo_cusnum;
+    public long getcusInfo_cusnum() {
+        return cusInfo_cusnum;
     }
 
-    public void setCusinfo_cusnum(long cusinfo_cusnum) {
-        this.cusinfo_cusnum = cusinfo_cusnum;
+    public void setcusInfo_cusnum(long cusInfo_cusnum) {
+        this.cusInfo_cusnum = cusInfo_cusnum;
     }
 
-    public String getCusinfo_lastname() {
-        return cusinfo_lastname;
+    public String getcusInfo_lastname() {
+        return cusInfo_lastname;
     }
 
-    public void setCusinfo_lastname(String cusinfo_lastname) {
-        this.cusinfo_lastname = cusinfo_lastname;
+    public void setcusInfo_lastname(String cusInfo_lastname) {
+        this.cusInfo_lastname = cusInfo_lastname;
     }
 
-    public String getCusinfo_firstName() {
-        return cusinfo_firstName;
+    public String getcusInfo_firstName() {
+        return cusInfo_firstName;
     }
 
-    public void setCusinfo_firstName(String cusinfo_firstName) {
-        this.cusinfo_firstName = cusinfo_firstName;
+    public void setcusInfo_firstName(String cusInfo_firstName) {
+        this.cusInfo_firstName = cusInfo_firstName;
     }
 
-    public String getCusinfo_middleName() {
-        return cusinfo_middleName;
+    public String getcusInfo_middleName() {
+        return cusInfo_middleName;
     }
 
-    public void setCusinfo_middleName(String cusinfo_middleName) {
-        this.cusinfo_middleName = cusinfo_middleName;
+    public void setcusInfo_middleName(String cusInfo_middleName) {
+        this.cusInfo_middleName = cusInfo_middleName;
     }
 
-    public LocalDate getCusinfo_birthday() {
-        return cusinfo_birthday;
+    public LocalDate getcusInfo_birthday() {
+        return cusInfo_birthday;
     }
 
-    public void setCusinfo_birthday(LocalDate cusinfo_birthday) {
-        this.cusinfo_birthday = cusinfo_birthday;
+    public void setcusInfo_birthday(LocalDate cusInfo_birthday) {
+        this.cusInfo_birthday = cusInfo_birthday;
     }
 
-    public String getCusinfo_resident() {
-        return cusinfo_resident;
+    public String getcusInfo_resident() {
+        return cusInfo_resident;
     }
 
-    public void setCusinfo_resident(String cusinfo_resident) {
-        this.cusinfo_resident = cusinfo_resident;
+    public void setcusInfo_resident(String cusInfo_resident) {
+        this.cusInfo_resident = cusInfo_resident;
     }
 
-    public String getCusinfo_doc_inn() {
-        return cusinfo_doc_inn;
+    public String getcusInfo_doc_inn() {
+        return cusInfo_doc_inn;
     }
 
-    public void setCusinfo_doc_inn(String cusinfo_doc_inn) {
-        this.cusinfo_doc_inn = cusinfo_doc_inn;
+    public void setcusInfo_doc_inn(String cusInfo_doc_inn) {
+        this.cusInfo_doc_inn = cusInfo_doc_inn;
     }
 
-    public String getCusinfo_citizenship() {
-        return cusinfo_citizenship;
+    public String getcusInfo_citizenship() {
+        return cusInfo_citizenship;
     }
 
-    public void setCusinfo_citizenship(String cusinfo_citizenship) {
-        this.cusinfo_citizenship = cusinfo_citizenship;
+    public void setcusInfo_citizenship(String cusInfo_citizenship) {
+        this.cusInfo_citizenship = cusInfo_citizenship;
     }
 
-    public String getCusinfo_magicWord() {
-        return cusinfo_magicWord;
+    public String getcusInfo_magicWord() {
+        return cusInfo_magicWord;
     }
 
-    public void setCusinfo_magicWord(String cusinfo_magicWord) {
-        this.cusinfo_magicWord = cusinfo_magicWord;
+    public void setcusInfo_magicWord(String cusInfo_magicWord) {
+        this.cusInfo_magicWord = cusInfo_magicWord;
     }
 
-    public String getCusinfo_filial() {
-        return cusinfo_filial;
+    public String getcusInfo_filial() {
+        return cusInfo_filial;
     }
 
-    public void setCusinfo_filial(String cusinfo_filial) {
-        this.cusinfo_filial = cusinfo_filial;
+    public void setcusInfo_filial(String cusInfo_filial) {
+        this.cusInfo_filial = cusInfo_filial;
     }
 
-    public String getCusinfo_dopen() {
-        return cusinfo_dopen;
+    public String getcusInfo_dopen() {
+        return cusInfo_dopen;
     }
 
-    public void setCusinfo_dopen(String cusinfo_dopen) {
-        this.cusinfo_dopen = cusinfo_dopen;
+    public void setcusInfo_dopen(String cusInfo_dopen) {
+        this.cusInfo_dopen = cusInfo_dopen;
     }
 
-    public String getCusinfo_doc_type() {
-        return cusinfo_doc_type;
+    public String getcusInfo_doc_type() {
+        return cusInfo_doc_type;
     }
 
-    public void setCusinfo_doc_type(String cusinfo_doc_type) {
-        this.cusinfo_doc_type = cusinfo_doc_type;
+    public void setcusInfo_doc_type(String cusInfo_doc_type) {
+        this.cusInfo_doc_type = cusInfo_doc_type;
     }
 
-    public String getCusinfo_doc_ser() {
-        return cusinfo_doc_ser;
+    public String getcusInfo_doc_ser() {
+        return cusInfo_doc_ser;
     }
 
-    public void setCusinfo_doc_ser(String cusinfo_doc_ser) {
-        this.cusinfo_doc_ser = cusinfo_doc_ser;
+    public void setcusInfo_doc_ser(String cusInfo_doc_ser) {
+        this.cusInfo_doc_ser = cusInfo_doc_ser;
     }
 
-    public String getCusinfo_doc_num() {
-        return cusinfo_doc_num;
+    public String getcusInfo_doc_num() {
+        return cusInfo_doc_num;
     }
 
-    public void setCusinfo_doc_num(String cusinfo_doc_num) {
-        this.cusinfo_doc_num = cusinfo_doc_num;
+    public void setcusInfo_doc_num(String cusInfo_doc_num) {
+        this.cusInfo_doc_num = cusInfo_doc_num;
     }
 
-    public LocalDate getCusinfo_doc_date() {
-        return cusinfo_doc_date;
+    public LocalDate getcusInfo_doc_date() {
+        return cusInfo_doc_date;
     }
 
-    public void setCusinfo_doc_date(LocalDate cusinfo_doc_date) {
-        this.cusinfo_doc_date = cusinfo_doc_date;
+    public void setcusInfo_doc_date(LocalDate cusInfo_doc_date) {
+        this.cusInfo_doc_date = cusInfo_doc_date;
     }
 
-    public String getCusinfo_doc_agency() {
-        return cusinfo_doc_agency;
+    public String getcusInfo_doc_agency() {
+        return cusInfo_doc_agency;
     }
 
-    public void setCusinfo_doc_agency(String cusinfo_doc_agency) {
-        this.cusinfo_doc_agency = cusinfo_doc_agency;
+    public void setcusInfo_doc_agency(String cusInfo_doc_agency) {
+        this.cusInfo_doc_agency = cusInfo_doc_agency;
     }
 
-    public String getCusinfo_doc_subdiv() {
-        return cusinfo_doc_subdiv;
+    public String getcusInfo_doc_subdiv() {
+        return cusInfo_doc_subdiv;
     }
 
-    public void setCusinfo_doc_subdiv(String cusinfo_doc_subdiv) {
-        this.cusinfo_doc_subdiv = cusinfo_doc_subdiv;
+    public void setcusInfo_doc_subdiv(String cusInfo_doc_subdiv) {
+        this.cusInfo_doc_subdiv = cusInfo_doc_subdiv;
     }
 }
