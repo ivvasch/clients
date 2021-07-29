@@ -1,7 +1,6 @@
 package ru.inversion.clients.mainData;
 
 public class ClientsDop {
-    private Long icusnum;               // Идентификатор клиента
     private String cusInfo_ph_type;             // Тип: (0-телефон, 1-факс и т.п.)
     private String cusInfo_ph_cnt;              // Телефонный код страны
     private String cusInfo_ph_city;             // Код города

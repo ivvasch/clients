@@ -1,8 +1,9 @@
-package ru.inversion.clients.xmlData;
+package ru.inversion.clients.mainData;
 
 import java.time.LocalDate;
+import java.util.List;
 
-public class ClientsHistXML {
+public class ClientsHist {
     private Long vnedocnum;              // Внешний номер договора
     private Long vnydocnum;              // Внутренний номер договора (уникальный)
     private String type;                 // Тип (Кредит или Кредитная карта)
@@ -12,17 +13,13 @@ public class ClientsHistXML {
     private String prodnum;              // Кредитный продукт  номер
     private String prodname;             // Кредитный продукт наименование
     private String branch;               // Филиал
-    private String dlastplatod;          // Дата финального платежа по основному долгу (план)
-    private String dlastplatp;           // Дата финального платежа % (план)
+    private LocalDate dlastplatod;       // Дата финального платежа по основному долгу (план)
+    private LocalDate dlastplatp;        // Дата финального платежа % (план)
     private String platperod;            // Периодичность выплаты основного долга (ежемесячно , и т.п.)
     private String platperp;             // Периодичность выплат %%
     private String grnt;                 // Вид обеспечения - (ВО)
     private String catgrnt;              // Категория вида обеспечения
-    // необходимо будет создать класс и заменить в этом классе переменные на список содержащий объект с этими подвидами
-    private String subgrnt;              // Подвид - (П) (2 типа ниже входят в него)
-     private String name;                 // 1 Наименование
-     private String pletype;              // 2 Тип подвида
-    // ****************************************************************************************************************
+    private List<SubgrntHist> subgrnt;   // Подвид - (П)
     private LocalDate docdate;           // Дата договора
     private String docstate;             // Статус договора Чеpновик/Условный/Действующий/Завершенный/Заявка (0/1/2/3/4)
     private LocalDate statdate;          // Дата статуса
@@ -37,7 +34,7 @@ public class ClientsHistXML {
     private String intimeplatc;          // Количество своевременных платежей
     private String ovtimeplatc;          // Количество просроченных платежей
 
-    public ClientsHistXML() {
+    public ClientsHist() {
     }
 
     public Long getVnedocnum() {
@@ -112,19 +109,19 @@ public class ClientsHistXML {
         this.branch = branch;
     }
 
-    public String getDlastplatod() {
+    public LocalDate getDlastplatod() {
         return dlastplatod;
     }
 
-    public void setDlastplatod(String dlastplatod) {
+    public void setDlastplatod(LocalDate dlastplatod) {
         this.dlastplatod = dlastplatod;
     }
 
-    public String getDlastplatp() {
+    public LocalDate getDlastplatp() {
         return dlastplatp;
     }
 
-    public void setDlastplatp(String dlastplatp) {
+    public void setDlastplatp(LocalDate dlastplatp) {
         this.dlastplatp = dlastplatp;
     }
 
@@ -160,28 +157,12 @@ public class ClientsHistXML {
         this.catgrnt = catgrnt;
     }
 
-    public String getSubgrnt() {
+    public List<SubgrntHist> getSubgrnt() {
         return subgrnt;
     }
 
-    public void setSubgrnt(String subgrnt) {
+    public void setSubgrnt(List<SubgrntHist> subgrnt) {
         this.subgrnt = subgrnt;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPletype() {
-        return pletype;
-    }
-
-    public void setPletype(String pletype) {
-        this.pletype = pletype;
     }
 
     public LocalDate getDocdate() {

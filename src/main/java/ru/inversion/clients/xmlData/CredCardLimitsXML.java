@@ -1,4 +1,4 @@
-package ru.inversion.clients.xmlData;
-
-public class CredCardLimitsXML {
-}
+//package ru.inversion.clients.xmlData;
+//
+//public class CredCardLimitsXML {
+//}

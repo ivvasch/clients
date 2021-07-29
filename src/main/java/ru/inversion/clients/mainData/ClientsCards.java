@@ -1,19 +1,81 @@
 package ru.inversion.clients.mainData;
 
 public class ClientsCards {
-    private Long icusnum;                       // Идентификатор клиента
     private String cusInfo_plcv;                // вид карты
     private String cusInfo_caccacc;             // номер карточного счета
     private String cusInfo_plccur;              // валюта счета
     private String cusInfo_pltsysname;          // платежная система
-    private String cusInfo_plctype;             // достаем тип
+    private String cusInfo_plctype;             // тип карты (Gold, Platinum, Classic)
     private String cusInfo_period;              // срок действия
     private String cusInfo_platype;             // идентификатор типа принадлежности карты: 1 - корпоративная, 2 - личная
     private String cusInfo_plcprim;             // основная 1 / дополнительная 2
     private String cusInfo_invstat;             // текст статуса инверсия
     private String cusInfo_invstatid;           // id статуса инверсии
 
+    // Ниже находятся переменные возвращаемые из базы в формате XML
+    private String plcid;                       // идентификатор карты
+    private String plcnum;                      // номер карты
+    private String dclose;                      // дата закрытия карты
+    private String branch;                      // филиал
+    /*
+    private String ostvr;                       // остаток валютный, реальный
+    private String ostrr;                       // остаток в эквиваленте, реальный
+    private String ostvp;                       // остаток валютный, плановый
+    private String plcidosn;                    // ??? че за переменная
+    private String plcnumosn;                   // ??? че за переменная
+     */
+    //    private String plcv;                  // вид карты 1 - кредитная, 2 - дебетовая
+//    private String caccacc;                   // номер карточного счета
+//    private String plccur;                    // валюта
+//    private String pltsysname;                // платежная система
+//    private String plctype;                   // тип карты (Gold, Platinum, Classic)
+//    private String period;                    // срок дествия
+//    private String platype;                   // идентификатор типа принадлежности карты: 1 - корпоративная, 2 - личная
+//    private String plcprim;                   // основная 1 / дополнительная 2
+//    private String invstat;                   // текст статуса инверсия
+//    private String invstatid;                 // id статуса инверсии
+    private String vnstat;                      // текст статуса внешней системы    статус карты (новая, активная, блокирована)
     public ClientsCards() {
+    }
+
+    public String getPlcid() {
+        return plcid;
+    }
+
+    public void setPlcid(String plcid) {
+        this.plcid = plcid;
+    }
+
+    public String getPlcnum() {
+        return plcnum;
+    }
+
+    public void setPlcnum(String plcnum) {
+        this.plcnum = plcnum;
+    }
+
+    public String getDclose() {
+        return dclose;
+    }
+
+    public void setDclose(String dclose) {
+        this.dclose = dclose;
+    }
+
+    public String getBranch() {
+        return branch;
+    }
+
+    public void setBranch(String branch) {
+        this.branch = branch;
+    }
+
+    public String getVnstat() {
+        return vnstat;
+    }
+
+    public void setVnstat(String vnstat) {
+        this.vnstat = vnstat;
     }
 
     public String getCusInfo_plcv() {

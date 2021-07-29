@@ -3,14 +3,14 @@ package ru.inversion.clients;
 import ru.inversion.gateclasses.classes.Context;
 
 public class InReqClientsData212 extends Context {
-    private long   id;
-    private long pr_cusinf;
-    private long pr_cusinf_dop;
-    private long pr_cus_dep;
-    private long pr_cus_card;
-    private long pr_cus_acc;
-    private long pr_cr_hist;
-    private long pr_arrears;
+    private long id;
+    private long pr_cusinf;             // Признак (1/0): возвращать основную информацию по клиенту
+    private long pr_cusinf_dop;         // Признак (1/0): возвращать дополнительную информацию по клиенту
+    private long pr_cus_dep;            // Признак (1/0): возвращать информацию  о банковских вкладах клиента
+    private long pr_cus_card;           // Признак (1/0): возвращать информацию  о банковских картах  клиента
+    private long pr_cus_acc;            // Признак (1/0): возвращать информацию  о счетах клиента
+    private long pr_cr_hist;            // Признак (1/0): возвращать внутреннюю кредитную историю  клиента
+    private long pr_arrears;            // Признак (1/0): возвращать расшифровку  просрочек клиента
 
     public InReqClientsData212() {
     }
