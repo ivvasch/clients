@@ -3,7 +3,7 @@ package ru.inversion.clients.mainData;
 import java.time.LocalDate;
 import java.util.List;
 
-public class ClientsHist {
+public class Vn_cred_hist {
     private Long vnedocnum;              // Внешний номер договора
     private Long vnydocnum;              // Внутренний номер договора (уникальный)
     private String type;                 // Тип (Кредит или Кредитная карта)
@@ -19,7 +19,7 @@ public class ClientsHist {
     private String platperp;             // Периодичность выплат %%
     private String grnt;                 // Вид обеспечения - (ВО)
     private String catgrnt;              // Категория вида обеспечения
-    private List<SubgrntHist> subgrnt;   // Подвид - (П)
+    private List<Subgrnt> subgrnt;   // Подвид - (П)
     private LocalDate docdate;           // Дата договора
     private String docstate;             // Статус договора Чеpновик/Условный/Действующий/Завершенный/Заявка (0/1/2/3/4)
     private LocalDate statdate;          // Дата статуса
@@ -34,7 +34,7 @@ public class ClientsHist {
     private String intimeplatc;          // Количество своевременных платежей
     private String ovtimeplatc;          // Количество просроченных платежей
 
-    public ClientsHist() {
+    public Vn_cred_hist() {
     }
 
     public Long getVnedocnum() {
@@ -157,11 +157,11 @@ public class ClientsHist {
         this.catgrnt = catgrnt;
     }
 
-    public List<SubgrntHist> getSubgrnt() {
+    public List<Subgrnt> getSubgrnt() {
         return subgrnt;
     }
 
-    public void setSubgrnt(List<SubgrntHist> subgrnt) {
+    public void setSubgrnt(List<Subgrnt> subgrnt) {
         this.subgrnt = subgrnt;
     }
 

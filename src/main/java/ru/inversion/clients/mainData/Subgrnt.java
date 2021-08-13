@@ -1,10 +1,10 @@
 package ru.inversion.clients.mainData;
 
-public class SubgrntHist {
+public class Subgrnt {
     private String name;                 // 1 Наименование
     private String pletype;              // 2 Тип подвида
 
-    public SubgrntHist() {
+    public Subgrnt() {
     }
 
     public String getName() {
